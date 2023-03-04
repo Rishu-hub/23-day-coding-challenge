@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #272727;
+  font-family: consolas;
+}
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  position: relative;
+  cursor: pointer;
+}
+.part1 {
+  position: relative;
+  background: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.container .card:hover .part1 {
+  background: #2bff00;
+  transform: translateY(-100px);
+}
+.part2 {
+  transform: translateY(0);
+}
+.part2 p {
+  margin: 0;
+  padding: 0;
+}
+.redme {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  padding: 13px;
+  font-weight: 900;
+  color: #c2bebe;
+}
+.redme:hover {
+  background: #1d1d1d;
+  color: #2bff00;
+}
